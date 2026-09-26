@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <style>
+        main {
+            padding: 10px;
+            margin: 10px;
+            overflow: hidden; /* Contains floated sibling layout */
+        }
+        aside {
+            width: 200px;
+            border: 1px solid black;
+            padding-inline: 10px;
+            margin: 10px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <h2>sidebar</h2>
+        <p>This is some content in the sidebar.</p>
+    </aside>
+
+    <main>
+        <h1>Main Content</h1>
+        <p>This is the main content of the page.</p>
+
+        <figure>
+            <img src="Screenshot from 2026-09-07 19-35-07.png" alt="Trulli">
+            <figcaption>Trulli architecture</figcaption>
+        </figure>
+    </main>
+</body>
+</html>
