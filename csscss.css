@@ -1,0 +1,13 @@
+body {
+  animation: partyRainbow 2s steps(1, end) infinite;
+}
+
+@keyframes partyRainbow {
+  0%   { background-color: #ffff33; } 
+  25%  { background-color: #33ff33; } 
+  50%  { background-color: #33ffff; } 
+  75%  { background-color: #ff6600; } 
+  100% { background-color: #ffff33; } 
+}
+
+/*nd pa tapos 

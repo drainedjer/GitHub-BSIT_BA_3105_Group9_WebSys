@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Portal</title>
+    <link rel="stylesheet" href="csscss.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Portal</h1>
+        <p>Hello, young one. Welcome to the Scriptorium of Wisdom, where your designated study desk is prepared and the lanterns of knowledge burn forever bright.</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#grades">Grades</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <aside>
+            <h3>Profile</h3>
+            <p><strong>Name:</strong> Christian Jacob</p>
+            <p><strong>Status:</strong> Active</p>
+            <p><strong>Year:</strong> 3rd Year</p>
+            <p><strong>Course</strong>Bachelor of Science in Information Technology</p>
+        </aside>
+
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Hello! I am Jacob, I may be not that smart, but I dedicated to do my best to
+                    <span class="highlight-span">learn and explore</span>
+                </p>
+                <p>I thing that I liked are the <b>Late Night</b> <i>Coding with friends</i> <strong>exploring</strong> and <em>mastery in coding</em>.</p>
+                <hr>
+            </section>
+
+            <section id="media">
+                <h2>Media & Multimedia</h2>
+                <figure>
+                    <img src="Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg.webp">
+                    <figcaption>This image is one of my favorite painting, it is painted by Van Gogh.</figcaption>
+                </figure>
+                <hr>
+            </section>
+
+            <section id="grades">
+                <h2>Academic Record Table</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Subject</th>
+                            <th>Units</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Christian Jacob</td>
+                            <td>Web Systems and Technologies</td>
+                            <td>3</td>
+                            <td>1.25</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Database Management</td>
+                            <td>3</td>
+                            <td>1.25</td>
+                        </tr>
+                        <tr>
+                            <td>Information Assurance and Security</td>
+                            <td>3</td>
+                            <td>1.25</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total Units</td>
+                            <td>9</td>
+                            <td>1.2 (GPA)</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <hr>
+            </section>
+
+            <section id="contact">
+                <h2>Registration</h2>
+                <form action="registration" method="POST">
+                    
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">Telephone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+                    <label for="track">Course Track:</label><br>
+                    <select id="track" name="track">
+                        <optgroup label="Information Technology">
+                            <option value="Busi_Anlyt">Business Analyst</option>
+                            <option value="web_dev">Web Development</option>
+                        </optgroup>
+                        <optgroup label="Computer Science">
+                            <option value="ai">Artificial Intelligence</option>
+                            <option value="data_sci">Data Science</option>
+                        </optgroup>
+                    </select><br><br>
+
+                    <label for="prog_lang">Favorite Programming Language:</label><br>
+                    <input list="languages" id="prog_lang" name="prog_lang">
+                    <datalist id="languages">
+                        <option value="Python">
+                        <option value="JavaScript">
+                        <option value="C++">
+                        <option value="Java">
+                        <option value="PHP">
+                    </datalist><br><br>
+
+                    <label>Elective Choices (Select zero or more):</label><br>
+                    <input type="checkbox" id="elect1" name="electives" value="UI">
+                    <label for="elect1"> UI Design</label><br>
+                    <input type="checkbox" id="elect2" name="electives" value="UX">
+                    <label for="elect2"> UX Design</label><br><br>
+                    <input type="checkbox" id="elect3" name="electives" value="Cloud">
+                    <label for="elect3"> Cloud Computing</label><br><br>
+
+                    <label for="profile_pic">Upload Profile Document/Image:</label><br>
+                    <input type="file" id="profile_pic" name="profile_pic"><br><br>
+
+                    <button type="submit">Submit the data</button>
+                    <button type="reset">Reset form field</button>
+
+                </form>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
